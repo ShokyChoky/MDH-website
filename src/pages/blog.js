@@ -1,11 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import Head from "../components/head"
 
 const PostPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             frontmatter {
@@ -25,6 +26,7 @@ const PostPage = () => {
 
   return (
     <Layout>
+      <Head title="Blog" />
       <h1>Page all</h1>
       <ol>
         {data.allMarkdownRemark.edges.map(edge => {

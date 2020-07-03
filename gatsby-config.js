@@ -12,11 +12,18 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    `gatsby-plugin-next-seo`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "src",
         path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-catch-links`,
+      options: {
+        excludePattern: /(excluded-link|external)/,
       },
     },
     "gatsby-plugin-sharp",
@@ -25,6 +32,7 @@ module.exports = {
       options: {
         plugins: [
           "gatsby-remark-relative-images",
+          `gatsby-plugin-react-helmet`,
           {
             resolve: "gatsby-remark-images",
             options: {

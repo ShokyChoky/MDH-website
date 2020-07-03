@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 const ProductPage = () => {
   return (
     <Layout>
-      <h1>Nothing here yet</h1>
+      <Head title="Product" />
+      <h1>มัมมมมมมมมมมมมมม</h1>
+      <h1>แตกพ่ายยยยยยยยยย</h1>
     </Layout>
   )
 }
