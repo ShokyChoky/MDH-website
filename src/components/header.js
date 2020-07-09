@@ -11,7 +11,7 @@ const Header = () => {
         </Link>
       </h1>
       <h2>The Innovative solution for Skin and Health</h2>
-      <nav>
+      <nav className={headerStyles.table}>
         <ul className={headerStyles.navList}>
           <li>
             <Link className={headerStyles.navItem} to="/">

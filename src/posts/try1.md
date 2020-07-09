@@ -1,6 +1,7 @@
 ---
 title: "Try post 1 la"
 date: "2020-06-29"
+tags: "Try"
 ---
 
 Just try to see where go where la

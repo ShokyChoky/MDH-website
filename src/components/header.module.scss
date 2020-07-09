@@ -4,14 +4,39 @@
   text-decoration: none;
 }
 
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
 .navList {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: auto;
+  width: 100%;
+  position: middle;
 }
 
 .navItem {
+  display: inline;
   color: darkcyan;
-  margin-right: 1.5rem;
+  margin-right: 5rem;
   text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+
+.header {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(123, 122, 121);
+  top: 10px;
+  background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #eae0d5 100%);
+  line-height: 1.75;
+  letter-spacing: 0.1em;
+  width: 100%;
+  height: auto;
 }
