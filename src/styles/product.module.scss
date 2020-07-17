@@ -1,0 +1,16 @@
+.navList {
+  display: flex;
+  list-style-type: none;
+  margin: auto;
+  width: 100%;
+  position: middle;
+}
+
+.navItem {
+  display: inline;
+  color: darkcyan;
+  margin-right: 5rem;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
